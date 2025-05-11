@@ -2,16 +2,22 @@
 
 ## Как запустить
 
-Запускаем mongodb и приложение
+Перейдите в директорию
+
+```shell
+cd sharding-repl-cache
+```
+
+Запускаем все микросервисы
 
 ```shell
 docker compose up -d
 ```
 
-Заполняем mongodb данными
+Инициализируем и проверяем mongodb-кластер
 
 ```shell
-./scripts/mongo-init.sh
+sh ./setup-mongo.sh
 ```
 
 ## Как проверить
